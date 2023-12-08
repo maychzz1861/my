@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    html {
+      height: 100%;
+      line-height: 1.8;
+      background-image: url('picture/gg1.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: "Raleway", sans-serif;
+      background-attachment: fixed;
+      position: relative;
+    }
+    .portfolio {
+      padding-top: 180px; /* Adjust based on your navbar height */
+      text-align: center;
+      position: fixed;
+    }
+
+    .portfolio-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: fixed;
+  margin-top: -130px;
+  left: 50%; /* ย้ายจุดเริ่มต้นของหัวข้อไปที่ครึ่งหนึ่งของ container */
+  transform: translateX(-50%); /* ให้หัวข้อย้ายไปทางซ้ายเพื่อจัดให้อยู่ตรงกลาง */
+}
+
+
+    .portfolio-description {
+      font-style: italic;
+    }
+
+    .portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto; /* Center the images */
+  max-width: 900px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-top: -80px;
+  position: fixed;
+}
+.portfolio-image {
+  margin: 10px;
+  flex: 0 0 calc(33.33% - 20px); /* Adjust width between images */
+  max-width: 300px; /* Set maximum width for individual images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s ease-in-out;
+  position: relative; /* Adjusted property */
+  
+}
+
+
+    .portfolio-image img {
+  width: 100%;
+  height: 200px; /* Set the height to maintain aspect ratio */
+  object-fit: cover; /* Maintain aspect ratio */
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+    .portfolio-image img:hover {
+      opacity: 0.8;
+    }
+
+    /* Media query for responsiveness */
+    @media screen and (max-width: 768px) {
+      .portfolio-image {
+        flex: 0 0 calc(50% - 20px);
+        max-width: 48%; /* Adjust width for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+    <body>
+        <div class="navbar">
+          <div class="navbar-logo">
+            <a href="index.html"><i class="fas fa-home"></i></a>
+          </div>
+          <!-- Right-sided navbar links -->
+          <div class="navbar-links">
+            <a href="about.html"><i class="fas fa-info-circle"></i> ABOUT</a>
+            <a href="java.html"><i class="fas fa-users"></i> JAVA</a>
+            <a href="api.html"><i class="fas fa-briefcase"></i> API</a>
+            <a href="photos.html"><i class="fas fa-image"></i> PHOTOS</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> CONTACT</a>
+          </div>
+        </div>
+  <!-- Your portfolio section -->
+  <div class="portfolio">
+    <h3 class="portfolio-heading">MY PHOTOS</h3>
+    <p class="portfolio-description">Here are some of my latest lorem work ipsum tipsum. Click on the images to make them bigger</p><br>
+
+    <!-- Responsive Grid for Images -->
+    <div class="portfolio-images">
+      <!-- Image 1 -->
+      <div class="portfolio-image">
+        <img src="picture/q.jpg" onclick="onClick(this)" alt="Description for Image 1">
+      </div>
+
+      <!-- Add more images with the same structure -->
+      <!-- Image 2 -->
+      <div class="portfolio-image">
+        <img src="picture/w.jpg" onclick="onClick(this)" alt="Description for Image 2">
+      </div>
+
+      <!-- Image 3 -->
+      <div class="portfolio-image">
+        <img src="picture/r.jpg" onclick="onClick(this)" alt="Description for Image 3">
+      </div>
+
+      <!-- Image 4 -->
+      <div class="portfolio-image">
+        <img src="picture/t.jpg" onclick="onClick(this)" alt="Description for Image 4">
+      </div>
+
+      <div class="portfolio-image">
+        <img src="picture/i.jpg" onclick="onClick(this)" alt="Description for Image 4">
+      </div>
+  
+      <div class="portfolio-image">
+        <img src="picture/y.jpg"  alt="Description for Image 4">
+      </div>
+    </div>
+  </div>
+
+  <!-- Your additional content goes here -->
+
+</body>
+</html>
