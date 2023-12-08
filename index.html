@@ -101,7 +101,7 @@ button {
     transition: background-color 0.3s ease;
     width: 150px;
     position: fixed;
-    left: 175px;
+    right: 60px;
     margin-top: 38px;
 }
 
@@ -118,11 +118,12 @@ button:hover {
 }
 
 h4 {
-  margin-top: -5px;
+  margin-top: 3px;
   position: fixed;
 }
 .card-content {
   position: relative; 
+  
 }
 
 .video-container {
@@ -159,16 +160,18 @@ h4 {
 .horizontal-line {
   position: fixed;
   position: absolute;
-  width: 100%; /* ทำให้เส้นขีดยาวเต็มความกว้างของ container */
+  width: 300%; /* ทำให้เส้นขีดยาวเต็มความกว้างของ container */
   border-top: 1px solid rgba(206, 129, 129, 0.732);
 }
 
 .top-line {
-  transform: translateY(-39000%); /* ขยับเส้นไปด้านบน */
+  transform: translateY(6000%); /* ขยับเส้นไปด้านบน */
+  position: fixed;
 }
 
 .bottom-line {
-  transform: translateY(39000%); /* ขยับเส้นไปด้านล่าง */
+  transform: translateY(-6000%);
+  position: fixed; /* ขยับเส้นไปด้านล่าง */
 }
 .fab {
   position: fixed; /* ทำให้ไอคอนอยู่ในตำแหน่งเดิมและไม่ขยับ */
@@ -215,7 +218,7 @@ h4 {
   <div class="card">
     <div class="content">
       <span style="font-size: 4em;">H</span><span style="font-size: 4em;">e</span><span style="font-size: 4em;">l</span><span style="font-size: 4em;">l</span><span style="font-size: 4em;">o</span><span style="font-size: 4em;">!</span><br>
-      <span style="margin-top: 30px;">I</span><span>'</span><span>m</span><span>&nbsp;</span><span style="color: blue;">C</span><span style="color: blue;">h</span><span style="color: blue;">a</span><span style="color: blue;">v</span><span style="color: blue;">e</span><span style="color: blue;">e</span><span style="color: blue;">w</span><span style="color: blue;">a</span><span style="color: blue;">n</span><span style="color: blue;">&nbsp;</span><span style="color: blue;">C</span><span style="color: blue;">h</span><span style="color: blue;">a</span><span style="color: blue;">n</span><span style="color: blue;">y</span><span style="color: blue;">a</span><span style="color: blue;">s</span><span style="color: blue;">r</span><span style="color: blue;">i</span><br>
+      <span style="margin-top: 30px;">I</span><span>'</span><span>m</span><span>&nbsp;</span><span style="color: blue;">C</span><span style="color: blue;">h</span><span style="color: blue;">a</span><span style="color: blue;">v</span><span style="color: blue;">e</span><span style="color: blue;">e</span><span style="color: blue;">w</span><span style="color: blue;">a</span><span style="color: blue;">n</span><span style="color: blue;">&nbsp;<br>
       <a href="About.html" style="margin-top: 40px;">
         <button>SEE PORTFOLIO</button>
       </a>
